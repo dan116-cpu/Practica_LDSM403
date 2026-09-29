@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <title>TechAcademy</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+        <nav class="navPrincipal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentorias.html">Mentorias</a></li>
+                <li><a href="inscripcion.html" id="btn_destacado">Inscribirse</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <main class="contenedor_principal">
+
+        <section class="tec">
+            <section class="tec_contenido">
+                <h2>Aprende las tecnologias del futuro, hoy</h2>
+                <p>Cursos practicos liderados por expertos de la industria</p>
+                <a href="cursos.html" id="btn_accion">Ver catalogo</a>
+            </section>
+            <section class="imagen">
+                <img src="imagenes/Programmer.jpg" alt="Estudiante programando">
+            </section>
+        </section>
+
+        <section id="catalogo">
+            <h2>Nuestra Oferta Educativa</h2>
+            <div class="grid_cursos">
+
+                <article class="tarjeta_curso">
+                    <img src="imagenes/Front-end Programmer.jpg" alt="FrontEnd">
+                    <div class="info_curso">
+                        <div class="institucion">
+                            <span>Instituto Nova</span>
+                        </div>
+                        <h3>Desarrollo Web FrontEnd</h3>
+                        <p class="instructor">Instructor: Mtra. Andrea Salcedo</p>
+                        <p>Domina HTML5 semántico, CSS3 y JavaScript interactivo.</p>
+                        <div class="etiquetas">
+                            <span class="estrellas" style="--valor: 4.8" role="img" aria-label="Valoración 4.8 de 5">★★★★★</span>
+                            <span class="valoracion">4.8</span>
+                            <span class="nivel">Principiante</span>
+                            <span class="tipo">Certificación</span>
+                        </div>
+                        <a href="inscripcion.html" class="btn_curso">Inscribirme</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta_curso">
+                    <img src="imagenes/Python Ilustracion 2.jpg" alt="Python">
+                    <div class="info_curso">
+                        <div class="institucion">
+                            <span>Universidad Aurora</span>
+                        </div>
+                        <h3>Python para Ciencia de Datos</h3>
+                        <p class="instructor">Instructor: Dr. Luis Ferrer</p>
+                        <p>Análisis de datos estructurados, visualización y machine learning.</p>
+                        <div class="etiquetas">
+                            <span class="estrellas" style="--valor: 4.6" role="img" aria-label="Valoración 4.6 de 5">★★★★★</span>
+                            <span class="valoracion">4.6</span>
+                            <span class="nivel">Intermedio</span>
+                            <span class="tipo">Especialización</span>
+                        </div>
+                        <a href="inscripcion.html" class="btn_curso">Inscribirme</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta_curso">
+                    <img src="imagenes/Base de datos ilustracion.jpg" alt="Base de Datos">
+                    <div class="info_curso">
+                        <div class="institucion">
+                            <span>Centro Tecnológico Andes</span>
+                        </div>
+                        <h3>Bases de Datos Robustas</h3>
+                        <p class="instructor">Instructor: Mtro. Ricardo Mena</p>
+                        <p>Diseño SQL relacional, llaves foráneas y normalización.</p>
+                        <div class="etiquetas">
+                            <span class="estrellas" style="--valor: 4.5" role="img" aria-label="Valoración 4.5 de 5">★★★★★</span>
+                            <span class="valoracion">4.5</span>
+                            <span class="nivel">Principiante</span>
+                            <span class="tipo">Certificación</span>
+                        </div>
+                        <a href="inscripcion.html" class="btn_curso">Inscribirme</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta_curso">
+                    <img src="imagenes/BACKEND.jpg" alt="Backend con APIs">
+                    <div class="info_curso">
+                        <div class="institucion">
+                            <span>Escuela Cumbre</span>
+                        </div>
+                        <h3>Programación Backend con APIs</h3>
+                        <p class="instructor">Instructor: Ing. Daniela Ortiz</p>
+                        <p>Construye servicios REST con autenticación, validación y documentación.</p>
+                        <div class="etiquetas">
+                            <span class="estrellas" style="--valor: 4.9" role="img" aria-label="Valoración 4.9 de 5">★★★★★</span>
+                            <span class="valoracion">4.9</span>
+                            <span class="nivel">Avanzado</span>
+                            <span class="tipo">Especialización</span>
+                        </div>
+                        <a href="inscripcion.html" class="btn_curso">Inscribirme</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+     </main>
+     <footer>
+        <p>&copy; 2026 TechAcademy</p>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <link rel="stylesheet" href="css/EstiloInscripcion.css">
+    <title>Inscripción | TechAcademy</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+        <nav class="navPrincipal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentorias.html">Mentorias</a></li>
+                <li><a href="inscripcion.html" id="btn_destacado" aria-current="page">Inscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor_principal">
+        <div class="contenedor-inscripcion">
+            <div class="formulario-inscripcion">
+                
+                <section class="encabezado_pagina">
+                    <h2>Inscripción</h2>
+                    <p>Completa el formulario y nos pondremos en contacto contigo. Los campos con * son obligatorios.</p>
+                </section>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+
+                        <div class="campo">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80" autocomplete="name" placeholder="Ej. Ana López García">
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo">Correo electrónico *</label>
+                            <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="ana@correo.com">
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Escribe 10 dígitos, sin espacios ni guiones" autocomplete="tel" placeholder="4771234567">
+                            <span class="ayuda">10 dígitos, sin espacios ni guiones.</span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="ciudad">Ciudad (opcional)</label>
+                            <input type="text" id="ciudad" name="ciudad" autocomplete="address-level2" placeholder="Ej. León, Guanajuato">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Programa de interés</legend>
+
+                        <div class="campo">
+                            <label for="curso">Curso *</label>
+                            <select id="curso" name="curso" required>
+                                <option value="" selected disabled>Selecciona un curso</option>
+                                <option value="frontend">Desarrollo Web FrontEnd</option>
+                                <option value="python">Python para Ciencia de Datos</option>
+                                <option value="bases_datos">Bases de Datos Robustas</option>
+                                <option value="backend">Programación Backend con APIs</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo_opciones">
+                            <p>Tu nivel actual *</p>
+                            <div>
+                                <label><input type="radio" name="nivel" value="principiante" required> Principiante</label>
+                                <label><input type="radio" name="nivel" value="intermedio"> Intermedio</label>
+                                <label><input type="radio" name="nivel" value="avanzado"> Avanzado</label>
+                            </div>
+                        </div>
+
+                        <div class="grupo_opciones">
+                            <p>¿Qué te interesa? *</p>
+                            <div>
+                                <label><input type="radio" name="interes" value="solo_curso" required> Solo el curso</label>
+                                <label><input type="radio" name="interes" value="curso_mentoria"> Curso + mentoría</label>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="horario">Horario preferido (opcional)</label>
+                            <select id="horario" name="horario">
+                                <option value="">Sin preferencia</option>
+                                <option value="manana">Mañana</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noche">Noche</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Información adicional</legend>
+
+                        <div class="campo">
+                            <label for="comentarios">¿Por qué quieres tomar este programa? (opcional)</label>
+                            <textarea id="comentarios" name="comentarios" rows="4" maxlength="300" placeholder="Cuéntanos tus objetivos (máximo 300 caracteres)"></textarea>
+                        </div>
+
+                        <label class="terminos">
+                            <input type="checkbox" name="terminos" value="si" required>
+                            <span>Acepto los términos y el aviso de privacidad *</span>
+                        </label>
+                    </fieldset>
+
+                    <div class="acciones">
+                        <button type="submit" class="btn_enviar">Enviar inscripción</button>
+                        <button type="reset" class="btn_limpiar">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+    </main>
+    <footer>
+        <p>&copy; 2026 TechAcademy</p>
+    </footer>
+</body>
+</html>

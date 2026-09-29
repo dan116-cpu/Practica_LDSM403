@@ -1,0 +1,158 @@
+.contenedor-inscripcion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario-inscripcion {
+    width: 100%;
+    max-width: 750px;
+    background-color: var(--color_claro);
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color_borde);
+    box-sizing: border-box;
+}
+
+
+.formulario-inscripcion .encabezado_pagina {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.formulario-inscripcion .encabezado_pagina h2 {
+    color: var(--color_secundario);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+
+.formulario-inscripcion fieldset {
+    border: 1px solid var(--color_borde);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #fafafa;
+}
+
+.formulario-inscripcion legend {
+    font-family: var(--fuente_titulos);
+    font-weight: 700;
+    color: var(--color_secundario);
+    padding: 0 10px;
+}
+
+
+.formulario-inscripcion .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.formulario-inscripcion label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--color_obscuro);
+}
+
+
+.formulario-inscripcion input:not([type="radio"]):not([type="checkbox"]),
+.formulario-inscripcion select,
+.formulario-inscripcion textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color_borde);
+    border-radius: 6px;
+    font-family: var(--fuente_cuerpo);
+    font-size: 1rem;
+    background-color: var(--color_claro);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+
+.formulario-inscripcion input:focus,
+.formulario-inscripcion select:focus,
+.formulario-inscripcion textarea:focus {
+    outline: none;
+    border-color: var(--color_principal);
+    box-shadow: 0 0 5px rgba(165, 147, 250, 0.4);
+}
+
+.formulario-inscripcion .ayuda {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+
+.formulario-inscripcion .grupo_opciones {
+    margin-bottom: 20px;
+}
+
+.formulario-inscripcion .grupo_opciones p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.formulario-inscripcion .grupo_opciones label {
+    margin-right: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.formulario-inscripcion .terminos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.formulario-inscripcion .acciones {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn_enviar, .btn_limpiar {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--fuente_titulos);
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn_enviar {
+    background-color: var(--color_principal);
+    color: var(--color_claro);
+    flex-grow: 1; 
+}
+
+.btn_enviar:hover {
+    background-color: var(--color_secundario);
+}
+
+.btn_limpiar {
+    background-color: var(--color_borde);
+    color: var(--color_obscuro);
+}
+
+.btn_limpiar:hover {
+    background-color: #d4d4d4;
+}
+
+.btn_enviar:active, .btn_limpiar:active {
+    transform: scale(0.98);
+}
